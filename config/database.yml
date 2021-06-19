@@ -1,0 +1,17 @@
+# PostgreSQL. Versions 8.2 and up are supported.
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: 123
+  pool: 5
+
+development:
+  <<: *default
+  database: rest_api
+
+production:
+  <<: *default
+  database: rest_api
